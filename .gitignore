@@ -2,4 +2,4 @@
 logs/*
 !logs/.gitkeep
 .DS_Store
-pulic/images/
+pulic/images/*
