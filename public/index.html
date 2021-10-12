@@ -4,112 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-      <h1>
-        Portfolio
-      </h1>
-      <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    </header>
+  <header>
+    <div class="container row">
+      <div class="title logo">
+        <div class="decoration-left"></div>
+        <h3>P</h3>
+        <div class="decoration-right"></div>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+      <nav class="nav nav-mobile">
+        <ul class="nav-list row">
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+      </nav>
+
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </div>
+  </header>
     <main>
-      <section id="about">
-        <h2>About</h2>
-        <img src="images/profile-img.jpg" alt="avatar">
-        <p>
-          Hello, I am Gennadiy. Actually, I am musician, I play piano. But 6 months ago I started to learn HTML and CSS and later - JavaScript. So, day by day, I began to understand, that it's very very interesting, it's attracts me. I understood that I like frontend and continued to learn it's 3 basics: HTML, CSS and JavaScript. 
-        </p>
-        <p>
-          From the end of September I started bootcamp in IT Academy by DevelopmentAid company. Here we have a great opportunity to communicate with professional programmers and to learn a lot from them.
-        </p>
-        <p>So, here my journey keeps going ...</p>
+      <div class="container">
+        <h1>
+          Portfolio
+        </h1>
+      </div>
+      <div class="about-skills container row">
+        
+        <section class="about">
+          <div >
+            <div class="title">
+              <div class="decoration-left"></div>
+              <h2>About</h2>
+              <div class="decoration-right"></div>
+            </div>
+            <img src="images/profile-img.jpg" alt="avatar">
+            <p class="about-text">
+              Hello, I am Gennadiy. Actually, I am musician, I play piano. But 6 months ago I started to learn HTML and CSS and later - JavaScript. So, day by day, I began to understand, that it's very very interesting, it's attracts me. I understood that I like frontend and continued to learn it's 3 basics: HTML, CSS and JavaScript. 
+            </p>
+            <p class="about-text">
+              From the end of September I started bootcamp in IT Academy by DevelopmentAid company. Here we have a great opportunity to communicate with professional programmers and to learn a lot from them.
+            </p>
+            <p class="about-text">So, here my journey keeps going ...</p>
+          </div>
+          
+        </section>
+    
+        <section class="skills">
+          <div class="container">
+            <div class="title">
+              <div class="decoration-left"></div>
+              <h2>Skills</h2>
+              <div class="decoration-right"></div>
+            </div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Sass</li>
+              <li>Bootstrap</li>
+              <li>Git</li>
+              <li>Photoshop</li>
+            </ul>
+          </div>
+          
+        </section>
+      </div>
+  
+      <section class="experience">
+        <div class="container">
+          <div class="title">
+            <div class="decoration-left"></div>
+            <h2>Experience</h2>
+            <div class="decoration-right"></div>
+          </div>
+          
+          <table>
+            <thead>
+              <tr>
+                <th>Period</th>
+                <th>Place</th>
+                <th>Position / Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2020 - present</td>
+                <td>AMTAP (Academy of Music, Theater and Fine Arts)</td>
+                <td>Accompanist</td>
+              </tr>
+              <tr>
+                <td>2018 - 2020</td>
+                <td>CMV (Cruise & Maritime Voyages)</td>
+                <td>Ship musician</td>
+              </tr>
+              <tr>
+                <td>2015-2018</td>
+                <td>AMTAP (Academy of Music, Theater and Fine Arts)</td>
+                <td>Accompanist</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         
       </section>
   
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Sass</li>
-          <li>Bootstrap</li>
-          <li>Git</li>
-          <li>Photoshop</li>
-        </ul>
-        
-      </section>
-  
-      <section id="experience">
-        <h2>Experience</h2>
-        
-        <table>
-          <thead>
-            <tr>
-              <th>Period</th>
-              <th>Place</th>
-              <th>Position / Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2020 - present</td>
-              <td>AMTAP (Academy of Music, Theater and Fine Arts)</td>
-              <td>Accompanist</td>
-            </tr>
-            <tr>
-              <td>2018 - 2020</td>
-              <td>CMV (Cruise & Maritime Voyages)</td>
-              <td>Ship musician</td>
-            </tr>
-            <tr>
-              <td>2015-2018</td>
-              <td>AMTAP (Academy of Music, Theater and Fine Arts)</td>
-              <td>Accompanist</td>
-            </tr>
-          </tbody>
-        </table>
-        
-      </section>
-  
-      <section id="contact">
-        <h2>Contact</h2>
-        <ul>
-            <li>Tel: <a href="tel:+37367272713">+37367272713</a></li>
-            <li>Email: <a href="mailto:gennadiysinigur@gmail.com">gennadiysinigur@gmail.com</a></li>
-            <li>Address:
-              <address>
-                2 Dacia Street
-                <br>
-                Chisinau
-                <br>
-                Moldova
-              </address></li>
-        </ul>
-  
-        <iframe 
-          frameborder="0" 
-          scrolling="no" 
-          marginheight="0" 
-          marginwidth=0" 
-          src="https://www.openstreetmap.org/export/embed.html?bbox=28.845417201519016%2C46.992548125384566%2C28.847670257091526%2C46.9938909741859&amp;layer=mapnik">
-        </iframe>
-        
-        <small>
-          <a href="https://www.openstreetmap.org/#map=19/46.99322/28.84654">View Larger Map</a>
-        </small>
+      <section class="contact">
+        <div class="container">
+          <div class="title">
+            <div class="decoration-left"></div>
+            <h2>Contact</h2>
+            <div class="decoration-right"></div>
+          </div>
+          <div class="row">
+            <ul>
+                <li>Tel: <a href="tel:+37367272713">+37367272713</a></li>
+                <li>Email: <a href="mailto:gennadiysinigur@gmail.com">gennadiysinigur@gmail.com</a></li>
+                <li>Address:
+                  <address>
+                    2 Dacia Street
+                    <br>
+                    Chisinau
+                    <br>
+                    Moldova
+                  </address></li>
+            </ul>
+      
+            <div class="map">
+              <iframe 
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth=0" 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=28.845417201519016%2C46.992548125384566%2C28.847670257091526%2C46.9938909741859&amp;layer=mapnik">
+              </iframe>
+              
+              <small>
+                <a href="https://www.openstreetmap.org/#map=19/46.99322/28.84654">View Larger Map</a>
+              </small>
+            </div>
+          </div>
+        </div>
     </section>
     </main>
     <footer>
-      <div>
+      <div class="container">
         Copyright &copy; 2021, Gennadiy Sinigur
       </div>
     </footer>
