@@ -3,3 +3,4 @@ logs/*
 !logs/.gitkeep
 .DS_Store
 public/images/*
+.vscode/
