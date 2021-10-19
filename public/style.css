@@ -28,6 +28,9 @@ iframe {
   max-width: 100%;
 }
 
+#about img {
+  max-width: 200px;
+}
 
 
 .body-color {
@@ -93,5 +96,11 @@ iframe {
 .btn:hover,
 .btn:focus {
   background-color: #cf7017;
+}
+
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
